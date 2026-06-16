@@ -1,0 +1,6 @@
+{
+  "name": "The Content Walas",
+  "description": "Premium Video, Reels & Photography Agency specializing in elite campaign production for fashion, lifestyle, and F&B brands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
