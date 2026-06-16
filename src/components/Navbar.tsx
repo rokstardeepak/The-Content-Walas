@@ -107,7 +107,7 @@ export function Navbar() {
                     </div>
 
                     {/* Standard Desktop Navlinks - Centered */}
-                    <nav className="hidden md:flex items-center gap-1.5 bg-white/[0.02] border border-white/[0.04] px-1 py-1 rounded-full backdrop-blur-md">
+                    <nav className="hidden md:flex items-center gap-1.5 bg-white/[0.015] border border-white/[0.05] px-1 py-1 rounded-full backdrop-blur-md">
                         {navLinks.map((link) => {
                             const isActive = activeSection === link.id;
                             return (

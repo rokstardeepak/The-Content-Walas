@@ -9,7 +9,7 @@ import agencyLogo from "@/527914263_17850629772519785_6525334527680286419_n.jpg"
 
 export function AboutSection() {
     return (
-        <section id="about" className="pt-24 pb-12 text-white">
+        <section id="about" className="py-0 md:py-0 text-white">
             <div className="container mx-auto px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <motion.div 
@@ -18,22 +18,22 @@ export function AboutSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 1, ease: "easeOut" }}
                     >
-                        <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight font-serif uppercase tracking-tight">
+                        <h2 className="text-3xl md:text-5xl font-black mb-4 md:mb-6 leading-tight font-serif uppercase [word-spacing:0.15em]">
                             <span className="text-white">
                                 Artistic Visuals,
                             </span>
                             <br />
                             <span className="text-[#ee6767]">Brought to Life.</span>
                         </h2>
-                        <p className="text-white/95 text-lg leading-relaxed mb-6 font-normal">
+                        <p className="text-white/95 text-lg leading-relaxed mb-4 font-normal tracking-wide [word-spacing:0.1em]">
                             The Content Walas is an elite creative agency transforming brands into social sensations. We create cinematic visual narratives and scroll-stopping reels designed to drive high-converting results.
                         </p>
-                        <div className="border-l-2 border-[#ee6767] pl-5 my-8 relative">
-                            <p className="text-white text-lg font-bold leading-relaxed italic">
+                        <div className="border-l-2 border-[#ee6767] pl-5 my-4 relative">
+                            <p className="text-white text-lg font-bold leading-relaxed italic tracking-wide [word-spacing:0.05em]">
                                 "We don't just shoot; we create narratives that stop the scroll and elevate your brand."
                             </p>
                         </div>
-                        <p className="text-white/95 text-lg leading-relaxed font-normal">
+                        <p className="text-white/95 text-lg leading-relaxed font-normal tracking-wide [word-spacing:0.1em]">
                             By fusing technical precision with dynamic social strategy, we elevate presence across Delhi NCR and beyond.
                         </p>
                     </motion.div>
@@ -43,11 +43,11 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                        className="relative rounded-2xl overflow-hidden border border-white/[0.08] hover:border-[#ee6767]/[0.4] transition-all duration-500 hover:shadow-[0_0_40px_-5px_rgba(238,103,103,0.15)] aspect-video md:h-[450px] md:aspect-auto group bg-black"
+                        className="relative rounded-2xl overflow-hidden border border-white/[0.08] hover:border-[#ee6767]/[0.4] transition-all duration-500 hover:shadow-[0_0_40px_-5px_rgba(238,103,103,0.15)] aspect-video md:h-[450px] md:aspect-auto group"
                     >
                         <video
                             src="/showreel.mp4"
-                            className="w-full h-full object-cover scale-[1.01]"
+                            className="w-full h-full object-cover scale-[1.01] opacity-80 group-hover:opacity-100 transition-opacity duration-700"
                             autoPlay
                             loop
                             muted
@@ -62,20 +62,20 @@ export function AboutSection() {
                 </div>
 
                 {/* Collaboration & Team Section */}
-                <div className="mt-20 pt-16 border-t border-white/[0.06]">
+                <div className="mt-2 pt-2 border-t border-white/[0.06]">
                     <motion.div 
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="bg-white/[0.02] border border-white/[0.04] rounded-3xl p-8 md:p-12 mb-12 backdrop-blur-md relative overflow-hidden"
+                        className="bg-white/[0.015] border border-white/[0.05] rounded-3xl p-8 md:p-12 mb-0 backdrop-blur-md relative overflow-hidden"
                     >
                         <div className="relative z-10 grid md:grid-cols-2 gap-10 items-start">
                             <div>
-                                <h3 className="text-2xl md:text-3xl font-black mb-6 tracking-tight font-serif uppercase">
+                                <h3 className="text-2xl md:text-3xl font-black mb-6 [word-spacing:0.15em] font-serif uppercase">
                                     <span className="text-[#ee6767]">Collaborate</span> with us.
                                 </h3>
-                                <p className="text-white/90 text-lg leading-relaxed font-normal mb-6">
+                                <p className="text-white/90 text-lg leading-relaxed font-normal mb-6 tracking-wide [word-spacing:0.1em]">
                                     Looking to collaborate with fashion, FnB, lifestyle & event brands for 🎥 videography, 📸 photography & 📈 marketing.
                                 </p>
                                 <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-8">

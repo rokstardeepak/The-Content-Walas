@@ -6,7 +6,7 @@ import { WhatsAppIcon } from "@/components/ui/brand-icons"
 
 export function HeroSpline() {
   return (
-    <div id="home" className="relative flex min-h-[95vh] md:min-h-screen w-full flex-col items-center justify-center py-16 md:py-24 px-4 overflow-hidden">
+    <div id="home" className="relative flex min-h-fit w-full flex-col items-center justify-center pt-24 md:pt-32 pb-12 md:pb-16 px-4 overflow-hidden">
       {/* Transparent black grid screen overlay for beautiful texture */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/60 pointer-events-none" />
@@ -15,7 +15,7 @@ export function HeroSpline() {
       <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center justify-center opacity-90">
         
         {/* Upper Brand Pill Tag */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/[0.06] bg-black/80 px-4 py-1.5 backdrop-blur-md mb-8 animate-fade-in">
+        <div className="inline-flex items-center gap-2 rounded-full border border-white/[0.06] bg-black/80 px-4 py-1.5 backdrop-blur-md mb-4 md:mb-8 animate-fade-in">
           <Sparkle className="w-3.5 h-3.5 text-[#ee6767]/80 fill-[#ee6767]/10 animate-pulse" />
           <span className="text-[10px] md:text-xs font-mono font-bold tracking-[0.18em] text-white/70 uppercase">
             ELEVATING BRANDS DELHI NCR • GURGAON
@@ -23,14 +23,14 @@ export function HeroSpline() {
         </div>
 
         {/* Massive Serif Main Headline with custom italic coral styling */}
-        <h1 className="mb-6 text-white text-center text-3xl sm:text-6xl md:text-7xl lg:text-[76px] font-black tracking-tight leading-[1.1] sm:leading-[1.05] font-serif max-w-5xl mx-auto uppercase select-none">
+        <h1 className="mb-4 md:mb-6 text-white text-center text-3xl sm:text-6xl md:text-7xl lg:text-[76px] font-black [word-spacing:0.15em] leading-[1.1] sm:leading-[1.05] font-serif max-w-5xl mx-auto uppercase select-none">
           We don't just shoot.<br />
-          We craft <span className="text-[#ee6767] italic font-medium tracking-tight">SCROLL-</span><br className="sm:hidden" />
-          <span className="text-[#ee6767] italic font-medium tracking-tight">STOPPING</span> brands.
+          We craft <span className="text-[#ee6767] italic font-medium [word-spacing:0.1em]">SCROLL-</span><br className="sm:hidden" />
+          <span className="text-[#ee6767] italic font-medium [word-spacing:0.1em]">STOPPING</span> brands.
         </h1>
 
         {/* Copywritten high-converting description */}
-        <p className="text-white/95 px-4 text-center text-sm md:text-base lg:text-[17px] max-w-2xl mx-auto font-medium leading-relaxed mb-10 tracking-wide">
+        <p className="text-white/95 px-4 text-center text-sm md:text-base lg:text-[17px] max-w-2xl mx-auto font-medium leading-relaxed mb-6 md:mb-10 tracking-widest [word-spacing:0.1em]">
           From luxury lookbooks to cinematic restaurant stories — we execute hyper-converting raw photography and reels designed strictly to make your D2C brand dominate social media.
         </p>
         

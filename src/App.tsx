@@ -8,7 +8,6 @@ import { HeroSpline } from "@/components/HeroSpline";
 import { AboutSection } from "@/components/sections/About";
 import { ServicesSection } from "@/components/sections/Services";
 import { PortfolioSection } from "@/components/sections/Portfolio";
-import { ContactSection } from "@/components/sections/Contact";
 import Footer4Col from "@/components/ui/footer-column";
 import { WebGLShader } from "@/components/ui/web-gl-shader";
 
@@ -21,12 +20,11 @@ export default function App() {
       </div>
       <Navbar />
       <div className="relative z-10">
-        <div className="pt-20 md:pt-0">
+        <div>
           <HeroSpline />
           <AboutSection />
           <PortfolioSection />
           <ServicesSection />
-          <ContactSection />
           <Footer4Col />
         </div>
       </div>

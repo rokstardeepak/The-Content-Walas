@@ -80,7 +80,7 @@ const contactInfo = [
 export default function Footer4Col() {
   return (
     <footer className="bg-transparent w-full">
-      <div className="mx-auto max-w-screen-xl px-6 pt-16 pb-12 lg:pt-24">
+      <div className="mx-auto max-w-screen-xl px-6 pt-10 pb-12 lg:pt-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div>
             <div className="flex items-center gap-3 group">

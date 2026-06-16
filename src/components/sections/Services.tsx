@@ -67,11 +67,11 @@ const processSteps = [
 
 export function ServicesSection() {
     return (
-        <section id="services" className="pt-8 pb-24 text-white border-y border-white/[0.03]">
+        <section id="services" className="pt-8 pb-0 text-white border-y border-white/[0.03]">
             <div className="container mx-auto px-6">
                 
                 {/* Header Section */}
-                <div className="max-w-3xl mb-20 p-2">
+                <div className="max-w-3xl mb-4 p-2">
                     <motion.p 
                         initial={{ opacity: 0, y: 15 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -86,14 +86,14 @@ export function ServicesSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="text-3xl md:text-5xl font-bold font-serif uppercase tracking-tight mb-6 leading-tight"
+                        className="text-3xl md:text-5xl font-bold font-serif uppercase [word-spacing:0.15em] mb-6 leading-tight"
                     >
                         <span className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300">
-                            High-Converting Content &
+                            High-Converting Content
                         </span>
                         <br />
-                        <span className="text-[#ee6767] italic font-medium tracking-tight">
-                            Cinematic Masterpieces
+                        <span className="text-[#ee6767] italic font-medium [word-spacing:0.1em]">
+                            & Cinematic Masterpieces
                         </span>
                     </motion.h2>
                     <motion.p 
@@ -101,7 +101,7 @@ export function ServicesSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-white/70 text-base md:text-lg font-light leading-relaxed"
+                        className="text-white/70 text-base md:text-lg font-light leading-relaxed tracking-wide [word-spacing:0.1em]"
                     >
                         Providing premium creative visual directions and viral production solutions for lifestyle, 
                         fashion, and F&B brands across Delhi NCR. Crafting scroll-stopping assets that command attention.
@@ -109,7 +109,7 @@ export function ServicesSection() {
                 </div>
 
                 {/* Services Bento Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-24">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-10">
                     {servicesList.map((service, index) => {
                         const IconComponent = service.icon;
                         return (
@@ -119,7 +119,7 @@ export function ServicesSection() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, delay: index * 0.1, ease: "easeOut" }}
-                                className="group relative p-8 md:p-10 rounded-2xl bg-white/[0.02] border border-white/[0.04] backdrop-blur-md hover:border-[#ee6767]/[0.4] hover:bg-white/[0.03] transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_15px_40px_rgba(238,103,103,0.08)] active:scale-[0.99] overflow-hidden"
+                                className="group relative p-8 md:p-10 rounded-2xl bg-white/[0.015] border border-white/[0.05] backdrop-blur-md hover:border-[#ee6767]/[0.4] hover:bg-white/[0.02] transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_15px_40px_rgba(238,103,103,0.08)] active:scale-[0.99] overflow-hidden"
                             >
                                 {/* Glow element in background on hover */}
                                 <div 
@@ -136,10 +136,10 @@ export function ServicesSection() {
                                     </span>
                                 </div>
 
-                                <h3 className="text-xl md:text-2xl font-black mb-3 tracking-tight font-serif uppercase bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 group-hover:from-white group-hover:to-[#ee6767] transition-all duration-300">
+                                <h3 className="text-xl md:text-2xl font-black mb-3 [word-spacing:0.15em] font-serif uppercase bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 group-hover:from-white group-hover:to-[#ee6767] transition-all duration-300">
                                     {service.title}
                                 </h3>
-                                <p className="text-white/90 text-sm md:text-base leading-relaxed font-medium">
+                                <p className="text-white/90 text-sm md:text-base leading-relaxed font-medium tracking-wide [word-spacing:0.1em]">
                                     {service.description}
                                 </p>
                             </motion.div>
@@ -148,7 +148,7 @@ export function ServicesSection() {
                 </div>
 
                 {/* Workflow Timeline Block */}
-                <div className="border border-white/[0.04] bg-white/[0.01] backdrop-blur-md hover:border-[#ee6767]/[0.4] hover:bg-white/[0.03] p-6 md:p-10 rounded-2xl relative overflow-hidden transition-all duration-500 hover:scale-[1.01] hover:shadow-[0_15px_40px_rgba(238,103,103,0.08)] active:scale-[0.99]" id="architectural-pipeline-parent">
+                <div className="border border-white/[0.05] bg-white/[0.015] backdrop-blur-md hover:border-[#ee6767]/[0.4] hover:bg-white/[0.02] pt-6 px-6 pb-2 md:pt-10 md:px-10 md:pb-4 rounded-2xl relative overflow-hidden transition-all duration-500 hover:scale-[1.01] hover:shadow-[0_15px_40px_rgba(238,103,103,0.08)] active:scale-[0.99]" id="architectural-pipeline-parent">
                     <div className="absolute top-0 right-0 p-8 text-[#ee6767]/10 pointer-events-none hidden md:block">
                         <Compass size={140} className="stroke-[0.5]" />
                     </div>

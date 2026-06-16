@@ -49,9 +49,9 @@ export function PortfolioSection() {
     });
 
     return (
-        <section id="projects" className="pt-8 pb-12 text-white overflow-hidden relative">
+        <section id="projects" className="pt-4 pb-6 text-white overflow-hidden relative">
             <div className="container mx-auto px-6 relative">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-2 gap-4">
                     <div>
                         <h2 className="text-3xl md:text-5xl font-black font-serif uppercase tracking-tight pb-2 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300">Featured Projects</h2>
                         <p className="text-white/95 text-sm md:text-base max-w-lg font-medium font-sans">
@@ -61,7 +61,7 @@ export function PortfolioSection() {
                 </div>
 
                 {/* Location Filter Tabs with refined counter badges */}
-                <div className="flex flex-wrap items-center gap-2 mb-10 pb-3 border-b border-white/[0.04]">
+                <div className="flex flex-wrap items-center gap-2 mb-4 pb-2 border-b border-white/[0.04]">
                     {filterGroups.map((group) => {
                         const isActive = selectedFilter === group.key;
                         return (
@@ -108,7 +108,7 @@ export function PortfolioSection() {
                             {filteredProjects.map((project, idx) => (
                                 <div
                                     key={project.url}
-                                    className="group relative flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_28%] aspect-[9/13] overflow-hidden rounded-2xl border border-white/[0.04] backdrop-blur-md hover:border-[#ee6767]/[0.5] transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(238,103,103,0.15)] bg-black"
+                                    className="group relative flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_28%] aspect-[9/13] overflow-hidden rounded-2xl border border-white/[0.05] backdrop-blur-md hover:border-[#ee6767]/[0.5] transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(238,103,103,0.15)] bg-black"
                                 >
                                     <div className="relative w-full h-full overflow-hidden pointer-events-auto">
                                         <iframe
@@ -165,7 +165,7 @@ export function PortfolioSection() {
                     </div>
  
                     {/* Mobile control fallback buttons */}
-                    <div className="flex gap-4 mt-8 sm:hidden justify-center">
+                    <div className="flex gap-4 mt-4 sm:hidden justify-center">
                         <button onClick={scrollPrev} className="p-2 bg-[#ee6767]/90 text-black rounded-full border border-[#ee6767]/50 shadow-[0_0_15px_rgba(238,103,103,0.3)] transition-colors hover:bg-[#ee6767]">
                             <ChevronLeft size={16} />
                         </button>

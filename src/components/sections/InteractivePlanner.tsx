@@ -57,7 +57,7 @@ export function InteractivePlanner() {
     };
 
     return (
-        <div id="contact" className="mt-24 relative z-10 w-full text-center">
+        <div id="contact" className="mt-10 mb-12 relative z-10 w-full text-center">
             {/* Heading Layer */}
             <div className="max-w-xl mx-auto mb-12">
                 <motion.p
@@ -95,7 +95,7 @@ export function InteractivePlanner() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="rounded-3xl max-w-4xl mx-auto p-5 md:p-7 relative overflow-hidden transition-all duration-500 hover:scale-[1.03] active:scale-[0.99] bg-white/[0.02] border border-white/[0.04] backdrop-blur-md"
+                className="rounded-3xl max-w-4xl mx-auto p-5 md:p-7 relative overflow-hidden transition-all duration-500 hover:scale-[1.03] active:scale-[0.99] bg-white/[0.015] border border-white/[0.05] backdrop-blur-md"
             >
                 {/* Glowing gold line effect inside card */}
                 <div className="absolute top-0 left-1/4 w-96 h-[1px] bg-gradient-to-r from-transparent via-[#ee6767]/40 to-transparent blur-sm opacity-75" />
